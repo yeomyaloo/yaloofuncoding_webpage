@@ -1,0 +1,24 @@
+<!--공통 레이아웃-->
+<!DOCTYPE html>
+<!--xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" 해당 레이아웃을 기본으로 지정-->
+<html lang = "ko" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" >
+
+<!--공통 헤드-->
+<head th:block th:replace ="fragments/head::headFragment"></head>
+
+<body>
+
+    <div id="wrapper">
+        <header th:block th:replace="fragments/header::headerFragment"></header>
+
+        <div id="content">
+            <!--content - 페이지마다 변경이 가능한 부분-->
+            <div th:block layout:fragment="content"></div>
+        </div>
+
+        <!--공통 하단-->
+        <footer th:block th:replace="fragments/footer::footerFragment"></footer>
+    </div>
+</body>
+</html>
