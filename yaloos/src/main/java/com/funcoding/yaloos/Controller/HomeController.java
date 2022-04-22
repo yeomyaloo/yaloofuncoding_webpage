@@ -1,4 +1,4 @@
-package com.funcoding.yaloos;
+package com.funcoding.yaloos.Controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
