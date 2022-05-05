@@ -11,8 +11,4 @@ public class HomeController {
         return "index";
     }
 
-    @RequestMapping("/form/new")
-    public String newform(){
-        return "/form/new";
-    }
 }
